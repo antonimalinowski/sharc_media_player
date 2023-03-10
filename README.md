@@ -1,5 +1,8 @@
 ﻿This repo documents my attempt of making a media player from scratch in C++.
 
+It also contains [for the moment] various c++ projects made in the process of familiarizing myself with WxWidgets library.
+I might do a separate repo for that media player project. For now all things are mashed up together...
+
 Configuring WxWidgets in Visual Studio:
 
 [Project]->properties->C/C++->[All Configurations + All Platforms]->Additional Include Directories:
