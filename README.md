@@ -3,7 +3,7 @@
 Configuring WxWidgets in Visual Studio:
 
 [Project]->properties->C/C++->[All Configurations + All Platforms]->Additional Include Directories:
-${WXWIN_path}\include [For me]: D:\sdks\wxwidget3221\include
+${WXWIN_path}\include [For me]: D:\sdks\wxwidget3221\include\
 ${WXWIN_path}\include\msvc [For me]: D:\sdks\wxwidget3221\include\msvc
 
 **Apply**
