@@ -1,5 +1,6 @@
 #include "MainFrame.h"
 #include <wx/wx.h>
+#include <wx/spinctrl.h>
 
 MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	wxPanel* panel = new wxPanel(this);
@@ -18,4 +19,10 @@ MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 
 	wxChoice* choice = new wxChoice(panel, wxID_ANY, wxPoint(150, 375), wxSize(100, -1), choices);
 	choice->Select(0);
+
+	wxSpinCtrl* spinCtrl = new wxSpinCtrl(panel, wxID_ANY, "", wxPoint(550, 375), wxSize(100, -1));
+
+	wxListBox* listBox = new wxListBox(panel, wxID_ANY, wxPoint(150, 475), wxSize(100, -1), choices);
+
+	wxRadioBox* radioBox = new wxRadioBox(panel, wxID_ANY, "RadioBox", wxPoint(485, 475), wxDefaultSize, choices);
 }
