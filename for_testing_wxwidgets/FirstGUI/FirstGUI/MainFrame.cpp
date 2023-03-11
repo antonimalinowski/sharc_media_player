@@ -11,9 +11,10 @@ Custom ID - Rules:
 MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	wxPanel* panel = new wxPanel(this);
 
-	CreateStatusBar();
+	wxStatusBar* statusBar = CreateStatusBar();
+	statusBar->SetDoubleBuffered(true);
 
-	panel->Bind(wxEVT_LEFT_DOWN, &MainFrame::OnMouseEvent, this);
+	panel->Bind(wxEVT_MOTION, &MainFrame::OnMouseEvent, this);
 }
 
 void MainFrame::OnMouseEvent(wxMouseEvent& evt) {
